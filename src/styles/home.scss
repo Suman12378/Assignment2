@@ -23,6 +23,26 @@
             height: 20px;
         }
     }
+
+    @media only screen and (max-width: 600px) {
+        /* Media query for screens with a maximum width of 600px (adjust as needed) */
+        display: flex;
+        flex-direction: column;
+
+        .foot-right{
+            display: flex;
+           flex-direction: column;
+        }
+        
+     
+        /* Additional styles for mobile screens */
+        input {
+          width: 40%; /* Make the input take the full width */
+          margin-bottom: 10px; /* Add some space between input and button */
+        }
+    
+       
+      }
 }
 
 .foot{
@@ -32,7 +52,7 @@
 }
 
 .foot-right{
-    margin-right: 2rem;
+    margin-right: 0.5rem;
    
 
     >span{
@@ -46,8 +66,25 @@
         border: 2px solid #e9e8e8;
       // box-shadow: rgb(168, 149, 149);
         cursor: pointer;
-        margin: 0.5rem;
+        margin: 0.4rem;
     }
+
+    @media only screen and (max-width: 600px) {
+        /* Media query for screens with a maximum width of 600px (adjust as needed) */
+        .foot-left,
+        .foot-right {
+          text-align: center; /* Center the text in both left and right sections */
+        }
+    
+        .foot-right {
+          margin-top: 10px; /* Add some space between left and right sections */
+        }
+    
+        button {
+          width: 30px; /* Adjust the button width as needed */
+          margin: 0 5px; /* Add some space between buttons */
+        }
+      }
 }
 
 

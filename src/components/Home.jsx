@@ -54,6 +54,10 @@ const Home = () => {
         setSelectedRows([...selectedRows, id]);
       }
     };
+
+    const selectAllHandler = () => {
+      
+    }
   
     // Handle bulk delete
     const deleteSelectedRows = () => {
